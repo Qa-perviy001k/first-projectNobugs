@@ -19,7 +19,7 @@ public class MathOperations {
         System.out.println("Максимальное число из двух представленных: " + findMax1);
 
         int difference1 = difference(30,20);
-        System.out.println("Остаток от вычитания двух чисел: " + difference1);
+        System.out.println("Абсолютная разница: " + difference1);
 
         int squareArea1 = squareArea(40);
         System.out.println("Площадь квадрата: " + squareArea1);
