@@ -63,11 +63,10 @@ public class MathOperations {
     }
 
     public static int divide(int x, int y) {
-        int total = x / y;
-        if (total == 0) {
-            throw new ArithmeticException("Результат не может быть равен 0!");
+        if (y == 0) {
+            throw new ArithmeticException("Деление на ноль невозможно!");
         }
-        return total;
+        return x / y;
     }
 
     public static int findMax(int a, int b) {
@@ -91,6 +90,9 @@ public class MathOperations {
     }
 
     public static double averageSpeed(double distance, double time) {
+        if (time == 0){
+            throw new ArithmeticException("Деление на ноль невозможно!");
+        }
         return distance / time;
     }
 
@@ -103,11 +105,10 @@ public class MathOperations {
     }
 
     public static double calculatePercentage(double total, double part) {
-        double result = (part / total) * 100;
-        if (result == 0) {
-                throw new ArithmeticException("Результат не может быть равен 0!");
+        if (total == 0) {
+                throw new ArithmeticException("Деление на ноль! total не может быть равен 0!");
             }
-            return result;
+            return (part / total) * 100;
         }
 
         public static double celsiusToFahrenheit ( double c){
