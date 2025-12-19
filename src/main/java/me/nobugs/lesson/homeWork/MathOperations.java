@@ -3,58 +3,58 @@ package me.nobugs.lesson.homeWork;
 public class MathOperations {
     public static void main(String[] args) {
 
-        int add1 = add(30,20);
-        System.out.println("Результат сложения двух чисел: " + add1);
+        int add1 = add(30, 20);
+        System.out.println("\nРезультат сложения двух чисел: " + add1);
 
-        int subtract1 = subtract(30,20);
-        System.out.println("Результат вычитания двух чисел: " + subtract1);
+        int subtract1 = subtract(30, 20);
+        System.out.println("\nРезультат вычитания двух чисел: " + subtract1);
 
-        int multiply1 = multiply(30,20);
-        System.out.println("Результат умножения двух чисел: " + multiply1);
+        int multiply1 = multiply(30, 20);
+        System.out.println("\nРезультат умножения двух чисел: " + multiply1);
 
-        int divide1 = divide(30,20);
-        System.out.println("Результат деления двух чисел: " + divide1);
+        int divide1 = divide(30, 20);
+        System.out.println("\nРезультат деления двух чисел: " + divide1);
 
-        int findMax1 = findMax(30,20);
-        System.out.println("Максимальное число из двух представленных: " + findMax1);
+        int findMax1 = findMax(30, 20);
+        System.out.println("\nМаксимальное число из двух представленных: " + findMax1);
 
-        int difference1 = difference(30,20);
-        System.out.println("Абсолютная разница: " + difference1);
+        int difference1 = difference(30, 20);
+        System.out.println("\nАбсолютная разница: " + difference1);
 
         int squareArea1 = squareArea(40);
-        System.out.println("Площадь квадрата: " + squareArea1);
+        System.out.println("\nПлощадь квадрата: " + squareArea1);
 
         int squarePerimeter1 = squarePerimeter(40);
-        System.out.println("Периметр квадрата: " + squarePerimeter1);
+        System.out.println("\nПериметр квадрата: " + squarePerimeter1);
 
         double convertSecondsToMinutes1 = convertSecondsToMinutes(300);
-        System.out.println("Перевод секунд в минуты: " + convertSecondsToMinutes1);
+        System.out.println("\nПеревод секунд в минуты: " + convertSecondsToMinutes1);
 
-        int averageSpeed1 = averageSpeed(100,1);
-        System.out.println("Средняя скорость: " + averageSpeed1);
+        double averageSpeed1 = averageSpeed(100, 1);
+        System.out.println("\nСредняя скорость: " + averageSpeed1);
 
         double findHypotenuse1 = findHypotenuse(11, 5);
-        System.out.println("Гипотенуза: " + findHypotenuse1);
+        System.out.println("\nГипотенуза: " + findHypotenuse1);
 
         double circleCircumference1 = circleCircumference(30);
-        System.out.println("Длина окружности: " + circleCircumference1);
+        System.out.println("\nДлина окружности: " + circleCircumference1);
 
-        double calculatePercentage1 = calculatePercentage(100,30);
-        System.out.println("Процент с итога: " + calculatePercentage1);
+        double calculatePercentage1 = calculatePercentage(100, 30);
+        System.out.println("\nПроцент с итога: " + calculatePercentage1);
 
         double celsiusToFahrenheit1 = celsiusToFahrenheit(20);
-        System.out.println("Перевод Цельсии в Фаренгейты: " + celsiusToFahrenheit1);
+        System.out.println("\nПеревод Цельсии в Фаренгейты: " + celsiusToFahrenheit1);
 
         double fahrenheitToCelsius1 = fahrenheitToCelsius(20);
-        System.out.println("Перевод Фаренгейта в Цельсии: " + fahrenheitToCelsius1);
+        System.out.println("\nПеревод Фаренгейта в Цельсии: " + fahrenheitToCelsius1);
 
     }
 
-    public static int add(int x, int y){
+    public static int add(int x, int y) {
         return x + y;
     }
 
-    public static int subtract(int x, int y){
+    public static int subtract(int x, int y) {
         return x - y;
     }
 
@@ -63,18 +63,22 @@ public class MathOperations {
     }
 
     public static int divide(int x, int y) {
-        return x / y;
+        int total = x / y;
+        if (total == 0) {
+            throw new ArithmeticException("Результат не может быть равен 0!");
+        }
+        return total;
     }
 
-    public static int findMax(int a, int b){
+    public static int findMax(int a, int b) {
         return Math.max(a, b);
     }
 
-    public static int difference(int x, int y){
+    public static int difference(int x, int y) {
         return Math.abs(x - y);
     }
 
-    public static int squareArea(int side){
+    public static int squareArea(int side) {
         return side * side;
     }
 
@@ -82,11 +86,11 @@ public class MathOperations {
         return 4 * side;
     }
 
-    public static double convertSecondsToMinutes(double seconds){
+    public static double convertSecondsToMinutes(double seconds) {
         return seconds / 60.0;
     }
 
-    public static int averageSpeed(int distance, int time){
+    public static double averageSpeed(double distance, double time) {
         return distance / time;
     }
 
@@ -99,16 +103,21 @@ public class MathOperations {
     }
 
     public static double calculatePercentage(double total, double part) {
-        return (part / total) * 100;
+        double result = (part / total) * 100;
+        if (result == 0) {
+                throw new ArithmeticException("Результат не может быть равен 0!");
+            }
+            return result;
+        }
+
+        public static double celsiusToFahrenheit ( double c){
+            return (c * 9 / 5) + 32;
+        }
+
+        public static double fahrenheitToCelsius ( double f){
+            return (f - 32) * 5 / 9;
+        }
     }
 
-    public static double celsiusToFahrenheit(double c) {
-        return (c * 9 / 5) + 32;
-    }
-
-    public static double fahrenheitToCelsius(double f) {
-        return (f - 32) * 5 / 9;
-    }
-}
 
 
