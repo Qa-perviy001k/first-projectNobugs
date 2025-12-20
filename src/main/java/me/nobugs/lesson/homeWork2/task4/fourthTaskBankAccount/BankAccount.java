@@ -30,7 +30,7 @@ public class BankAccount {
 
     public void withdraw(double amount){
         if (amount <= 0){
-            throw new IllegalArgumentException("Нельзя снять отрицательную сумму!");
+            throw new IllegalArgumentException("Нельзя снять отрицательную сумму, или 0!");
         }
         this.balance = this.balance - amount;
     }
