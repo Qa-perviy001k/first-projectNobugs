@@ -19,6 +19,10 @@ public class Circle {
         this.radius = newRadius;
     }
 
+    void printInfo(){
+        System.out.println("Радиус: " + this.radius);
+    }
+
     public double calculateArea(){
         return (Math.PI * this.radius * this.radius);
     }

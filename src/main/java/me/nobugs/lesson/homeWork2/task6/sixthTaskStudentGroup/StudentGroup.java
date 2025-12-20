@@ -30,7 +30,7 @@ public class StudentGroup {
     }
 
     void printInfo() {
-        System.out.println("Номер группы: " + this.groupName + ", количество студентов в группе: " + this.studentCount);
+        System.out.println("Номер группы: " + this.groupName + "\nКоличество студентов в группе: " + this.studentCount);
 
     }
 
