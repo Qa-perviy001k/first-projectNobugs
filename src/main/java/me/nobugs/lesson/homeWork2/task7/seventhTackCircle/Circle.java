@@ -2,7 +2,7 @@ package me.nobugs.lesson.homeWork2.task7.seventhTackCircle;
 
 public class Circle {
 
-     private double radius;
+    double radius;
 
     Circle(double someRadius){
         this.radius = someRadius;
