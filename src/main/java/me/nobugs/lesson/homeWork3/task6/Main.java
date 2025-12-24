@@ -10,6 +10,4 @@ public class Main {
         dmitriy.setFirstName("Виктор");
         dmitriy.printPersonInfo();
     }
-
-
 }
