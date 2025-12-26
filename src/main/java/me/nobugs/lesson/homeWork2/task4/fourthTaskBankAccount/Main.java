@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         BankAccount bA = new BankAccount("Иван",20);
             bA.printBalance();
-            bA.deposit(123.00);
+            bA.deposit(10);
             bA.printBalance();
-            bA.withdraw(20.42);
+            bA.withdraw(30);
             bA.printBalance();
 
         }

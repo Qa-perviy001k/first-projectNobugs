@@ -1,4 +1,4 @@
-package me.nobugs.lesson.homeWork2.task7.seventhTackCircle;
+package me.nobugs.lesson.homeWork2.task7.seventhTaskCircle;
 
 
 public class Main {

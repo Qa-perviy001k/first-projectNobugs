@@ -1,25 +1,25 @@
-package me.nobugs.lesson.homeWork2.task7.seventhTackCircle;
+package me.nobugs.lesson.homeWork2.task7.seventhTaskCircle;
 
 public class Circle {
 
-    double radius;
+    private double radius;
 
-    Circle(double someRadius){
+    public Circle(double someRadius){
         this.radius = someRadius;
     }
 
-    double getRadius(){
+    public double getRadius(){
         return this.radius;
     }
 
-    void setRadius (double newRadius){
+    public void setRadius (double newRadius){
         if(newRadius < 0){
             throw new IllegalArgumentException("Не может быть отрицательным!");
         }
         this.radius = newRadius;
     }
 
-    void printInfo(){
+    public void printInfo(){
         System.out.println("Радиус: " + this.radius);
     }
 

@@ -1,27 +1,27 @@
 package me.nobugs.lesson.homeWork2.task9.theNinthTaskProduct;
 
 public class Product {
-    String name;
-    double price;
+    private String name;
+    private double price;
 
-    Product(String someName, double somePrice){
+    public Product(String someName, double somePrice){
         this.name = someName;
         this.price = somePrice;
     }
 
-    String getName(){
+    public String getName(){
         return this.name;
     }
 
-    double getPrice(){
+    public double getPrice(){
         return this.price;
     }
 
-    void setPrice(double newPrice){
+    public void setPrice(double newPrice){
         this.price = newPrice;
     }
 
-    void printInfo(){
+    public void printInfo(){
         System.out.println("Товар: " + this.name + "\nЦена: " + this.price + ".руб");
     }
 

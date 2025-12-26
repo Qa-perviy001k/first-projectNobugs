@@ -1,31 +1,31 @@
-package me.nobugs.lesson.homeWork2.task8.eighthTackTeacher;
+package me.nobugs.lesson.homeWork2.task8.eighthTaskTeacher;
 
 public class Teacher {
-    String name;
-    String subject;
+    private String name;
+    private String subject;
 
-    Teacher(String someName, String someSubject){
+    public Teacher(String someName, String someSubject){
         this.name = someName;
         this.subject = someSubject;
     }
 
-    String getName(){
+    public String getName(){
         return this.name;
     }
 
-    String getSubject(){
+    public String getSubject(){
         return this.subject;
     }
 
-    void setName(String newName){
+    public void setName(String newName){
         this.name = newName;
     }
 
-    void setSubject(String newSubject){
+    public void setSubject(String newSubject){
         this.subject = newSubject;
     }
 
-    void printInfo(){
+    public void printInfo(){
         System.out.println("Имя учителя: " + this.name + "\nПредмет: " + this.subject);
 
     }

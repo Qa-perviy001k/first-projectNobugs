@@ -2,34 +2,34 @@ package me.nobugs.lesson.homeWork2.task6.sixthTaskStudentGroup;
 
 public class StudentGroup {
 
-    String groupName;
-    int studentCount;
+   private String groupName;
+   private int studentCount;
 
-    StudentGroup(String someGroupName, int someStudentCount) {
+    public StudentGroup(String someGroupName, int someStudentCount) {
         this.groupName = someGroupName;
         this.studentCount = someStudentCount;
     }
 
-    String getGroupName() {
+    public String getGroupName() {
         return this.groupName;
     }
 
-    int getStudentCount() {
+    public int getStudentCount() {
         return this.studentCount;
     }
 
-    void setGroupName(String newGroupName) {
+    public void setGroupName(String newGroupName) {
         this.groupName = newGroupName;
     }
 
-    void setStudentCount(int newStudentCount) {
+    public void setStudentCount(int newStudentCount) {
         if (newStudentCount < 0){
             throw new IllegalArgumentException("Значение не может быть отрицательным!");
         }
         this.studentCount = newStudentCount;
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("Номер группы: " + this.groupName + "\nКоличество студентов в группе: " + this.studentCount);
 
     }

@@ -1,4 +1,4 @@
-package me.nobugs.lesson.homeWork2.task8.eighthTackTeacher;
+package me.nobugs.lesson.homeWork2.task8.eighthTaskTeacher;
 
 public class Main {
     public static void main(String[] args) {

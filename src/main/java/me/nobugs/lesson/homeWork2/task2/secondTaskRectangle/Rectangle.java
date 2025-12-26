@@ -1,24 +1,24 @@
-package me.nobugs.lesson.homeWork2.task2.secondTackRectangle;
+package me.nobugs.lesson.homeWork2.task2.secondTaskRectangle;
 
 public class Rectangle {
 
-    int width;
-    int height;
+   private int width;
+    private int height;
 
-    Rectangle(int someWidth, int someHeight) {
+    public Rectangle(int someWidth, int someHeight) {
         this.width = someWidth;
         this.height = someHeight;
     }
 
-    int getWidth() {
+    public int getWidth() {
         return this.width;
     }
 
-    int getHeight() {
+    public int getHeight() {
         return this.height;
     }
 
-    void setWidth(int newWidth) {
+    public void setWidth(int newWidth) {
         this.width = newWidth;
     }
 
@@ -26,12 +26,12 @@ public class Rectangle {
         return width * height;
     }
 
-    void PrintArea(){
+    public void printArea(){
         int area = calculateArea(this.width,this.height);
         System.out.println("Площадь прямоугольника: " + area);
     }
 
-    void print(){
+    public void print(){
         System.out.println("Значение после изменения ширины: " + this.width);
     }
 
