@@ -5,7 +5,7 @@ public class GameSettings {
     final String gameName;
     int currentPlayers;
 
-    GameSettings(String someGameName) {
+    public GameSettings(String someGameName) {
         this.gameName = someGameName;
     }
 
@@ -21,7 +21,7 @@ public class GameSettings {
         }
     }
 
-        void printGameStatus () {
+    public void printGameStatus () {
             System.out.println("Название игры: " + this.gameName + "\nТекущее количество игроков: " + this.currentPlayers + "\nМаксимальное количество игроков: " + GameSettings.maxPlayers);
         }
     }

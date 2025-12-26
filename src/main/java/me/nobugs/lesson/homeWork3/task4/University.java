@@ -5,7 +5,7 @@ public class University {
     String studentName;
     final int studentID;
 
-    University(String someStudentName, int someStudentID){
+    public University(String someStudentName, int someStudentID){
         this.studentName = someStudentName;
         this.studentID = someStudentID;
     }
@@ -14,11 +14,11 @@ public class University {
        universityName = newName;
     }
 
-    String getStudentName(){
+    public  String getStudentName(){
        return this.studentName;
     }
 
-    void printStudentInfo(){
+    public void printStudentInfo(){
         System.out.println("Имя студента: " + this.studentName + "\nID студента: " + this.studentID + "\nУниверситет: " + universityName);
     }
 }

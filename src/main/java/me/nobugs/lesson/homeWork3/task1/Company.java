@@ -5,20 +5,20 @@ public class Company {
     final int EmployeeID;
     String employeeName;
 
-    Company(String someEmployeeName, int someEmployeeID) {
+    public Company(String someEmployeeName, int someEmployeeID) {
         this.employeeName = someEmployeeName;
         this.EmployeeID = someEmployeeID;
     }
 
-    String getEmployeeName(){
+    public String getEmployeeName(){
         return this.employeeName;
     }
 
-    void setEmployeeName(String newEmployeeID){
+    public void setEmployeeName(String newEmployeeID){
         this.employeeName = newEmployeeID;
     }
 
-    static void printCompanyName(){
+    public static void printCompanyName(){
         System.out.println("Название компании: " + companyName);
     }
 
