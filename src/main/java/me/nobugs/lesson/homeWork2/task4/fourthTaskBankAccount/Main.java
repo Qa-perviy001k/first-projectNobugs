@@ -6,7 +6,7 @@ public class Main {
             bA.printBalance();
             bA.deposit(10);
             bA.printBalance();
-            bA.withdraw(30);
+            bA.withdraw(20);
             bA.printBalance();
 
         }

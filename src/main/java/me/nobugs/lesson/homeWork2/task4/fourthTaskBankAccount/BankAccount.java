@@ -24,21 +24,23 @@ public class BankAccount {
     public void deposit(double amount) {
         if (amount < 0) {
             throw new IllegalArgumentException("Нельзя внести отрицательную сумму!");
+        } else {
+            this.balance = this.balance + amount;
         }
-        this.balance = this.balance + amount;
     }
 
     public void withdraw(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("Нельзя снять отрицательную сумму, или 0!");
-        } if (amount > balance) {
-                    throw new IllegalArgumentException("Недостаточно средств!");
-                }
+        }
+        if (amount > balance) {
+            throw new IllegalArgumentException("Недостаточно средств!");
+        } else {
             this.balance = this.balance - amount;
         }
+    }
 
         public void printBalance () {
             System.out.println("Владелец : " + this.owner + " \nТекущий баланс: " + this.balance);
-
         }
     }
