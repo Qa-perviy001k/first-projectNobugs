@@ -7,9 +7,6 @@ public class LibraryTest {
         lt.author = "Виктор";
         lt.category = "Фентези";
         lt.year = 12;
-
-
-
     }
 
 }

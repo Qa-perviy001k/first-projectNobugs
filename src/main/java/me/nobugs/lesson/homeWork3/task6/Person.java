@@ -5,10 +5,10 @@ public class Person {
     private String lastName;
     private final String ssn;
 
-    public Person(String someFirstName,String someLastName,String SomeSsn){
+    public Person(String someFirstName,String someLastName,String someSsn){
         this.firstName = someFirstName;
         this.lastName = someLastName;
-        this.ssn = SomeSsn;
+        this.ssn = someSsn;
     }
 
     public String getFirstName(){
