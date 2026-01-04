@@ -14,8 +14,8 @@ public class Company {
         return this.employeeName;
     }
 
-    public void setEmployeeName(String newEmployeeID){
-        this.employeeName = newEmployeeID;
+    public void setEmployeeName(String newEmployeeName){
+        employeeName = newEmployeeName;
     }
 
     public static void printCompanyName(){
