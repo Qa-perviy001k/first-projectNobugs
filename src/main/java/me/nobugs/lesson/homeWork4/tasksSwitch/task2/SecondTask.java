@@ -27,8 +27,7 @@ public class SecondTask {
             case 7:
                 return 450;
             default:
-                System.out.println("Несуществующий день недели");
-                return -1;
+                throw new IllegalArgumentException("Несуществующий день недели");
         }
     }
 }

@@ -19,6 +19,10 @@ public class SecondTask {
     }
 
         public static void checkLarger(int num1, int num2){
+            if (num1 < 0 || num2 < 0) {
+                throw  new IllegalArgumentException("Числа не могут быть отрицательными!");
+            }
+
             if (num1 > num2) {
                 System.out.println("Наибольшее число: " + num1);
             } else if (num2 > num1) {
