@@ -6,6 +6,10 @@ public class Library {
     int year;
     public String category;
 
+    public Library(){
+
+    }
+
     public String getBookTitle(){
         return this.bookTitle;
     }

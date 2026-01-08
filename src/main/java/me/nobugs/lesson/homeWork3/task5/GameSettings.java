@@ -3,7 +3,7 @@ package me.nobugs.lesson.homeWork3.task5;
 public class GameSettings {
     static int maxPlayers;
     final String gameName;
-    int currentPlayers;
+    int currentPlayers = 0;
 
     public GameSettings(String someGameName) {
         this.gameName = someGameName;
@@ -17,7 +17,7 @@ public class GameSettings {
         if (currentPlayers < maxPlayers) {
             currentPlayers++;
         } else {
-            throw new IllegalArgumentException("Превышен лимит, maxPlayers!");
+            System.out.println("ревышен лимит, maxPlayers!");
         }
     }
 
