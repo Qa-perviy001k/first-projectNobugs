@@ -21,9 +21,6 @@ public class FirstTask {
             }
             number = scanner.nextInt();
 
-            if (number <= 0)
-                System.out.println("Число должно быть больше 0!");
-
         } while (number <= 0);
 
         System.out.println("Ваше число положительное: " + number);
