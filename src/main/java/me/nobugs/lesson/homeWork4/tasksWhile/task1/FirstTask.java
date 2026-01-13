@@ -20,7 +20,7 @@ public class FirstTask {
         long result = 1;
         int i = 1;
         if (number < 0){
-            throw new IllegalArgumentException("Не может быть отрицательным!");
+            System.out.println("Не может быть отрицательным!");
         }
         while (i <= number){
             result *= i;

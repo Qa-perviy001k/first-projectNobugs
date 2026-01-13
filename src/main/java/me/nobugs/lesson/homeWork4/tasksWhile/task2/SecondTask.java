@@ -17,7 +17,7 @@ public class SecondTask {
     public static void printAllEvenNumbers(int number) {
         int i = 1;
         if (number < 0) {
-            throw new IllegalArgumentException("Не может быть меньше 0!");
+            System.out.println("Не может быть меньше 0!");
         }
             while (i <= number) {
              if (i % 2 == 0) {

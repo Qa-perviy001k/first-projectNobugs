@@ -24,7 +24,7 @@ public class StudentGroup {
 
     public void setStudentCount(int newStudentCount) {
         if (newStudentCount < 0){
-            throw new IllegalArgumentException("Значение не может быть отрицательным!");
+            System.out.println("Значение не может быть отрицательным!");;
         }
         this.studentCount = newStudentCount;
     }

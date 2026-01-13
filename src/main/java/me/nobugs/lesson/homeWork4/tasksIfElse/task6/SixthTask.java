@@ -17,7 +17,7 @@ public class SixthTask {
 
     public static void testScoreResult(int score) {
         if (score < 0) {
-            throw new IllegalArgumentException("Баллы не могу быть отрицательными, или меньше 0.");
+            System.out.println("Баллы не могу быть отрицательными, или меньше 0.");
         } else if (score < 60) {
             System.out.println("Неудовлетворительно.");
         } else if (score <= 74) {

@@ -15,7 +15,7 @@ public class Point {
 
     public void setX(double newX) {
         if (newX < 0){
-            throw new IllegalArgumentException("Значение не может быть отрицательным!");
+            System.out.println("Значение не может быть отрицательным!");
         }
         this.x = newX;
     }

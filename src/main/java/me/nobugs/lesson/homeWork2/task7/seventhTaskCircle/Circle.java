@@ -14,7 +14,7 @@ public class Circle {
 
     public void setRadius (double newRadius){
         if(newRadius < 0){
-            throw new IllegalArgumentException("Не может быть отрицательным!");
+            System.out.println("Не может быть отрицательным!");
         }
         this.radius = newRadius;
     }

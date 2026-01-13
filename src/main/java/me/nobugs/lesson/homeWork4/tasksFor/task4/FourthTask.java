@@ -15,13 +15,14 @@ public class FourthTask {
     }
 
     public static boolean checkNumberIsPrime(int number) {
-        boolean isPrime = true;
-        for (int i = 2; i <= number-1; i++) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i * i <= number; i++) {
             if (number % i == 0) {
-                isPrime = false;
-                break;
+                return false;
             }
         }
-        return isPrime;
+        return true;
     }
 }

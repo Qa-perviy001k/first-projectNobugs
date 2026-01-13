@@ -27,9 +27,9 @@ public class Product {
 
     public void applyDiscount(double discount){
         if (discount <= 0){
-            throw new IllegalArgumentException("Скидка не может быть отрицательной или равна 0!");
+            System.out.println("Скидка не может быть отрицательной или равна 0!");
         }else if (discount > 50){
-            throw new IllegalArgumentException("Скидка не может быть более 50%");
+            System.out.println("Скидка не может быть более 50%");
         }
         this.price = this.price - (this.price * discount / 100) ;
     }

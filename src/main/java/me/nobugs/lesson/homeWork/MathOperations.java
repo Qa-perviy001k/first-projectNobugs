@@ -64,7 +64,7 @@ public class MathOperations {
 
     public static int divide(int x, int y) {
         if (y == 0) {
-            throw new ArithmeticException("Деление на ноль невозможно!");
+            System.out.println("Деление на ноль невозможно!");;
         }
         return x / y;
     }
@@ -91,7 +91,7 @@ public class MathOperations {
 
     public static double averageSpeed(double distance, double time) {
         if (time == 0){
-            throw new ArithmeticException("Деление на ноль невозможно!");
+            System.out.println("Деление на ноль невозможно!");;
         }
         return distance / time;
     }
@@ -106,7 +106,7 @@ public class MathOperations {
 
     public static double calculatePercentage(double total, double part) {
         if (total == 0) {
-                throw new ArithmeticException("Деление на ноль! total не может быть равен 0!");
+            System.out.println("Деление на ноль! total не может быть равен 0!");;
             }
             return (part / total) * 100;
         }

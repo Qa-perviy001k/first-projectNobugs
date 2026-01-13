@@ -1,5 +1,4 @@
-package me.nobugs.
-        lesson.homeWork4.tasksSwitch.task1;
+package me.nobugs.lesson.homeWork4.tasksSwitch.task1;
 
 import java.util.Scanner;
 

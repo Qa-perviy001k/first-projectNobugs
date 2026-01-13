@@ -1,7 +1,5 @@
 package me.nobugs.lesson.homeWork4.tasksSwitch.task5;
 
-import javax.sound.midi.Soundbank;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class FifthTask {
@@ -41,7 +39,7 @@ public class FifthTask {
                 break;
             case "/":
                 if(num2 == 0) {
-                    throw new ArithmeticException("Деление на 0 запрещено!");
+                    System.out.println("Деление на 0 запрещено!");
                 }
                 result = num1 / num2;
                 System.out.println("Результат: " + result);

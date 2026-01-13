@@ -17,7 +17,7 @@ public class ThirdTask {
 
     public static String convertNumbersLetters(int score) {
         if (score < 0 || score > 100) {
-            throw new IllegalArgumentException("Оценка должна быть в диапазоне от 0 до 100");
+            System.out.println("Оценка должна быть в диапазоне от 0 до 100");
         } else if (score < 60) {
             return "F";
         } else if (score <= 69) {
@@ -29,5 +29,6 @@ public class ThirdTask {
         } else {
             return  "A";
         }
+        return "0";
     }
 }

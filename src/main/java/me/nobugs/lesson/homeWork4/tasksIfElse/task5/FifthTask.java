@@ -9,12 +9,12 @@ public class FifthTask {
         System.out.print("Введите возраст: ");
         int age = scanner.nextInt();
 
-        AgeDiscount(age);
+        ageDiscount(age);
 
         scanner.close();
     }
 
-    public static void AgeDiscount(int age){
+    public static void ageDiscount(int age){
         if(age <= 0){
             System.out.println("Возраст не может быть меньше, равен 0, или отрицательным.");
         } else if (age < 18){

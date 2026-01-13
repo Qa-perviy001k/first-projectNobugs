@@ -1,7 +1,5 @@
 package me.nobugs.lesson.homeWork4.taskBreakContinue.task2;
 
-import java.util.Scanner;
-
 public class SecondTask {
     public static void main(String[] args) {
         skippingNumbersDivisible3();

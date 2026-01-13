@@ -23,7 +23,7 @@ public class BankAccount {
 
     public void deposit(double amount) {
         if (amount < 0) {
-            throw new IllegalArgumentException("Нельзя внести отрицательную сумму!");
+            System.out.println("Нельзя внести отрицательную сумму!");
         } else {
             this.balance = this.balance + amount;
         }
@@ -31,10 +31,10 @@ public class BankAccount {
 
     public void withdraw(double amount) {
         if (amount <= 0) {
-            throw new IllegalArgumentException("Нельзя снять отрицательную сумму, или 0!");
+            System.out.println("Нельзя снять отрицательную сумму, или 0!");;
         }
         if (amount > balance) {
-            throw new IllegalArgumentException("Недостаточно средств!");
+            System.out.println("Недостаточно средств!");
         } else {
             this.balance = this.balance - amount;
         }
