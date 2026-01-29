@@ -1,4 +1,4 @@
-package me.nobugs.lesson.homeWork5.task1.zoopark;
+package me.nobugs.lesson.homeWork5.task1.Zoo;
 
 public abstract class Animal {
 

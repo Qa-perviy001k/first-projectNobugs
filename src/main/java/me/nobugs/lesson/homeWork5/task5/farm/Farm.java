@@ -8,16 +8,17 @@ public class Farm {
         this.animal = animal;
     }
 
-    public void removeAnimal(Animal animal) {
+    public void removeAnimal() {
         System.out.println("\nЖивотное: " + animal + " успешно удалено");
         this.animal = null;
     }
 
-    public void interactionAnimal(){
-        if (animal == null){
+    public void interactionAnimal() {
+        if (animal == null) {
             System.out.println("Животное не добавлено!");
+        } else {
+            this.animal.act();
+            this.animal.care();
         }
-        this.animal.act();
-        this.animal.care();
     }
 }

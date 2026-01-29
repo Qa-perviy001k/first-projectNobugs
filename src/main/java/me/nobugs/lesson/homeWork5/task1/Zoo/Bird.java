@@ -1,4 +1,4 @@
-package me.nobugs.lesson.homeWork5.task1.zoopark;
+package me.nobugs.lesson.homeWork5.task1.Zoo;
 
 public class Bird extends Animal{
     @Override
@@ -11,7 +11,8 @@ public class Bird extends Animal{
         System.out.println("Животное выполняет действие: Летает");
     }
 
+    @Override
     public String toString() {
-        return "Bird";
+        return getClass().getSimpleName();
     }
 }

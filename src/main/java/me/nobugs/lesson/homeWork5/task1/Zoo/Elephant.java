@@ -1,4 +1,4 @@
-package me.nobugs.lesson.homeWork5.task1.zoopark;
+package me.nobugs.lesson.homeWork5.task1.Zoo;
 
 public class Elephant extends Animal{
     @Override
@@ -8,10 +8,11 @@ public class Elephant extends Animal{
 
     @Override
     public void act() {
-        System.out.println("Живетное выполняет действие: Ходит");
+        System.out.println("Животное выполняет действие: Ходит");
     }
 
+    @Override
     public String toString() {
-        return "Elephant";
+        return getClass().getSimpleName();
     }
 }

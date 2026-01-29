@@ -11,7 +11,8 @@ public class Switchback extends Attraction {
         System.out.println("Ощущения: Страшно");
     }
 
+    @Override
     public String toString() {
-        return "Switchback";
+        return getClass().getSimpleName();
     }
 }

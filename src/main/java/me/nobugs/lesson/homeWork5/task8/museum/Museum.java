@@ -8,17 +8,17 @@ public class Museum {
         this.exhibit = exhibit;
     }
 
-    public void removeExhibit(Exhibit exhibit) {
+    public void removeExhibit() {
         System.out.println("\nЭкспонат: " + exhibit + " успешно удален");
         this.exhibit = null;
     }
 
-    public void checkExhibit(){
-        if (exhibit == null){
+    public void checkExhibit() {
+        if (exhibit == null) {
             System.out.println("Экспонат не добавлен!");
+        } else {
+            this.exhibit.describe();
+            this.exhibit.preserve();
         }
-        this.exhibit.describe();
-        this.exhibit.preserve();
     }
-
 }

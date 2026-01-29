@@ -8,7 +8,7 @@ public class Aquarium {
         this.creature = creature;
     }
 
-    public void removeCreature(Creature creature){
+    public void removeCreature(){
         System.out.println("\nСущество: " + creature + " успешно удалено");
         this.creature = null;
     }
@@ -16,7 +16,8 @@ public class Aquarium {
     public void giveCommand(){
         if (creature == null){
             System.out.println("Существо не добавлено!");
+        } else {
+            this.creature.act();
         }
-        this.creature.act();
     }
 }

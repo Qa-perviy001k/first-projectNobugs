@@ -6,7 +6,8 @@ public class Peyote extends Plant{
         System.out.println("Уход за растением: Требует много света и необходим редкий полив");
     }
 
+    @Override
     public String toString() {
-        return "Peyote";
+        return getClass().getSimpleName();
     }
 }

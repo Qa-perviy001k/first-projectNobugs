@@ -21,18 +21,16 @@ public class Main {
     public static void main(String[] args) {
 
         Farm farm = new Farm();
-        Kine kine = new Kine();
+        Cow cow = new Cow();
         Chicken chicken = new Chicken();
 
-        farm.addAnimal(kine);
+        farm.addAnimal(cow);
         farm.interactionAnimal();
 
-        farm.removeAnimal(kine);
+        farm.removeAnimal();
 
         farm.addAnimal(chicken);
         farm.interactionAnimal();
-
-
 
     }
 }

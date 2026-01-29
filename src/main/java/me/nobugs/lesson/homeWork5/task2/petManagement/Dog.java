@@ -11,7 +11,8 @@ public class Dog extends HousePet {
         System.out.println("Питомец выполняет действие: Гуляет");
     }
 
+    @Override
     public String toString() {
-        return "Dog";
+        return getClass().getSimpleName();
     }
 }

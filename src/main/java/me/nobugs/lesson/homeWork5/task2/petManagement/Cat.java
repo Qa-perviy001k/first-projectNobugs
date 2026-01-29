@@ -12,8 +12,9 @@ public class Cat extends HousePet {
         System.out.println("Питомец выполняет действие: Играет");
     }
 
+    @Override
     public String toString() {
-        return "Cat";
+        return getClass().getSimpleName();
     }
 
 }

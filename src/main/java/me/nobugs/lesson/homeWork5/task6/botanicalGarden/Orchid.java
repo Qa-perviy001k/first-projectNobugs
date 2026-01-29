@@ -6,7 +6,8 @@ public class Orchid extends Plant{
         System.out.println("Уход за растением: Нуждается в тени и высокой влажности");
     }
 
+    @Override
     public String toString() {
-        return "Orchid";
+        return getClass().getSimpleName();
     }
 }

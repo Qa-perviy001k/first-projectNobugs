@@ -32,7 +32,7 @@ public class Main {
         museum.addExhibit(sculpture);
         museum.checkExhibit();
 
-        museum.removeExhibit(sculpture);
+        museum.removeExhibit();
 
         museum.addExhibit(manuscript);
         museum.checkExhibit();

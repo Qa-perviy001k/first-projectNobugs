@@ -12,7 +12,8 @@ public class Sculpture extends Exhibit{
         System.out.println("Обстановка: Нуждается в реставрации");
     }
 
+    @Override
     public String toString(){
-        return "Sculpture";
+        return getClass().getSimpleName();
     }
 }

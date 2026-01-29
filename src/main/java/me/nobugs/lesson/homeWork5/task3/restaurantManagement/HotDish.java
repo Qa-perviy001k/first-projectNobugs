@@ -16,7 +16,8 @@ public class HotDish extends Dish {
         System.out.println("Температура горячего блюда: " + this.temperature);
     }
 
+    @Override
     public String toString() {
-        return "HotDish";
+        return getClass().getSimpleName();
     }
 }

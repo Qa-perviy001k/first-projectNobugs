@@ -28,7 +28,7 @@ public class Main {
         amusementPark.showAttraction();
 
 
-        amusementPark.removeAttraction(carousel);
+        amusementPark.removeAttraction();
 
         amusementPark.addAttraction(switchback);
         amusementPark.showAttraction();

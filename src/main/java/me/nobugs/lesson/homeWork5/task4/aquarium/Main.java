@@ -28,7 +28,7 @@ public class Main {
         aquarium.addCreature(shark);
         aquarium.giveCommand();
 
-        aquarium.removeCreature(shark);
+        aquarium.removeCreature();
 
         aquarium.addCreature(starfish);
         aquarium.giveCommand();

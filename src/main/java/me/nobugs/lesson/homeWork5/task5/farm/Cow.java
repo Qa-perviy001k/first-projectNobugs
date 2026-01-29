@@ -1,6 +1,6 @@
 package me.nobugs.lesson.homeWork5.task5.farm;
 
-public class Kine extends Animal{
+public class Cow extends Animal{
     @Override
     public void act() {
         System.out.println("Поведение животного: Дает молоко");
@@ -11,8 +11,9 @@ public class Kine extends Animal{
         System.out.println("Уход за животным: Нуждается в выпасе");
     }
 
+    @Override
     public String toString() {
-        return "Kines";
+        return getClass().getSimpleName();
     }
 
 }

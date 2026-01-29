@@ -16,7 +16,8 @@ public class Drink extends Dish {
         System.out.println("Объем напитка: " + this.volume);
     }
 
+    @Override
     public String toString() {
-        return "Drink";
+        return getClass().getSimpleName();
     }
 }

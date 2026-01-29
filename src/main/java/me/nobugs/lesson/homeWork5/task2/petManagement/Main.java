@@ -33,7 +33,7 @@ public class Main {
         managementHousePet.addHousePet(cat);
         managementHousePet.giveCommandPet();
 
-        managementHousePet.removeHousePet(cat);
+        managementHousePet.removeHousePet();
 
         managementHousePet.addHousePet(dog);
         managementHousePet.giveCommandPet();

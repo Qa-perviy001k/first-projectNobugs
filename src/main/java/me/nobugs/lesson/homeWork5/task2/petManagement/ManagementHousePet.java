@@ -8,14 +8,18 @@ public class ManagementHousePet {
         this.housePet = housePet;
     }
 
-    public void removeHousePet(HousePet housePet){
+    public void removeHousePet(){
         System.out.println("\nПитомец: " + housePet + " успешно удален");
         this.housePet = null;
     }
 
-    public void giveCommandPet(){
-        this.housePet.eat();
-        this.housePet.act();
-    }
+    public void giveCommandPet() {
+        if (housePet == null) {
+            System.out.println("Животное не добавлено!");
+        } else {
+            this.housePet.eat();
+            this.housePet.act();
+        }
 
+    }
 }

@@ -12,8 +12,9 @@ public class Manuscript extends Exhibit {
         System.out.println("Обстановка: Требует контролируемую влажность");
     }
 
+    @Override
     public String toString(){
-        return "Manuscript";
+        return getClass().getSimpleName();
     }
 }
 

@@ -32,7 +32,7 @@ public class Main {
         restaurantMenu.addDish(steak);
         restaurantMenu.showCharacteristics();
 
-        Drink pepsi = new Drink(1);
+        Drink pepsi = new Drink(500);
         restaurantMenu.addDish(pepsi);
         restaurantMenu.showCharacteristics();
 

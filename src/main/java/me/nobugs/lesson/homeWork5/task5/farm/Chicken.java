@@ -8,10 +8,11 @@ public class Chicken extends Animal{
 
     @Override
     public void care() {
-        System.out.println("Уход за животным: Требует зерноНе");
+        System.out.println("Уход за животным: Требует зерно");
     }
 
+    @Override
     public String toString() {
-        return "Chicken";
+        return getClass().getSimpleName();
     }
 }

@@ -11,7 +11,8 @@ public class Carousel extends Attraction {
         System.out.println("Ощущения: Спокойная карусель");
     }
 
+    @Override
     public String toString() {
-        return "Carousel";
+        return getClass().getSimpleName();
     }
 }

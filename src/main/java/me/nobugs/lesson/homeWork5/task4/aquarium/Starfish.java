@@ -6,7 +6,8 @@ public class Starfish extends Creature{
         System.out.println("Существо выполняет действие: Медленно ползает");
     }
 
+    @Override
     public String toString() {
-        return "Starfish";
+        return getClass().getSimpleName();
     }
 }

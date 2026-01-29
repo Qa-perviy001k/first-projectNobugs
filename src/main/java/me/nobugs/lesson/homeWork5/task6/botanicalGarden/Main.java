@@ -27,7 +27,7 @@ public class Main {
         botanicalGarden.addPlant(cactus);
         botanicalGarden.care();
 
-        botanicalGarden.removePlant(cactus);
+        botanicalGarden.removePlant();
 
         botanicalGarden.addPlant(orchid);
         botanicalGarden.care();

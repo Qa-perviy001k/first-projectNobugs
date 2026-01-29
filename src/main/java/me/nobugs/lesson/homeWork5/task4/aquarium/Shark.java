@@ -6,7 +6,8 @@ public class Shark extends Creature {
         System.out.println("Существо выполняет действие: Плавает быстро и агрессивно" );
     }
 
+    @Override
     public String toString() {
-        return "Shark";
+        return getClass().getSimpleName();
     }
 }
