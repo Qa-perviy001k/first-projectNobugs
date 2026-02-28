@@ -1,4 +1,4 @@
-package me.nobugs.lesson;
+package me.nobugs.lesson.practice_1;
 
 public class Main {
     // поля
