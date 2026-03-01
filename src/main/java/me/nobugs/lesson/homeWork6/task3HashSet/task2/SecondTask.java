@@ -12,7 +12,7 @@ public class SecondTask {
 
         Set<Integer> numbers = new HashSet<>();
 
-        for (int i = 0; i <= 10; i ++) {
+        for (int i = 0; i < 10; i ++) {
             numbers.add(i);
         }
         System.out.println("HashSet:");

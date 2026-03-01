@@ -16,11 +16,10 @@ public class FirstTask {
         list.add("Осень");
         list.add("Зима");
         list.add("Зима");
-        list.add("Зима");
+        list.add("Лето");
 
         for (String l : list) {
-
+            System.out.println(l);
         }
-        System.out.println(list);
     }
 }

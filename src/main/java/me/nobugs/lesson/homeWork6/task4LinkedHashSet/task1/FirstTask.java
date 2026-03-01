@@ -1,8 +1,4 @@
 package me.nobugs.lesson.homeWork6.task4LinkedHashSet.task1;
-
-
-import me.nobugs.lesson.lessonJavaCode.UserInfo;
-
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -15,11 +11,16 @@ public class FirstTask {
 
         Set<String> line = new LinkedHashSet<>();
 
-        line.add("Victor");
+        line.add("Viktor");
         line.add("Peter");
         line.add("Anna");
         line.add("Alex");
         line.add("Nastya");
-        System.out.println(line);
+
+        for (String s: line){
+            System.out.println(s);
+        }
+
     }
 }
+

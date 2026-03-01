@@ -16,10 +16,7 @@ public class ThirdTask {
 
         if (!element.isEmpty()) {
             System.out.println(element.getFirst());
+            System.out.println(element.getLast());
         }
-
-        System.out.println(element.getLast());
-
-
     }
 }
